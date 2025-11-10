@@ -8,11 +8,11 @@ public class Number_Counter extends JFrame implements ActionListener {
     private JButton decreaseButton;
     private JButton increaseButton;
     private JLabel countLabel;
-    private JPanel contentPane; //name of my Number_Counter.form
+    private JPanel contentPane;
     private static int ctr;
 
     public Number_Counter() {
-        setContentPane(contentPane); // connecting it to the GUI form
+        setContentPane(contentPane); 
         setTitle("Number Counter");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         pack();
@@ -21,7 +21,7 @@ public class Number_Counter extends JFrame implements ActionListener {
         ctr = 0;
         countLabel.setText(String.valueOf(ctr));
 
-        decreaseButton.addActionListener(this);     //addActionListener calls the actionPerformed method
+        decreaseButton.addActionListener(this);    
         increaseButton.addActionListener(this);
     }
 
